@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLEEP EFFICIENCY</title>
+  <style>
+    #nav{
+      background-color: white;
+      height: 50px;
+      width: 100%;
+    }
+    #quote{
+      background-color: black;
+      height: 90vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      scroll-behavior: smooth;
+
+    }
+    h1{
+      color: white;
+      text-wrap: wrap;
+      font-size: 34px;
+      text-align: center;
+      line-height: 50px;
+
+   
+      margin-bottom: 30vh;
+    }
+
+    .test{
+      height: 5vh;
+      width: 20vw;
+      padding: 10px;
+      font-weight: bold;
+      background-color: rgb(72, 171, 135);
+      color: white;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .test:hover{
+      box-shadow: 2px 2px 2px rgb(234, 217, 118);
+      border: none;
+    }
+    #img1{
+      height: 80vh;
+      width: 100vw;
+      background: url('static/assets/bg1.jpg') ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bt2{
+      height: 5vh;
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bolder;
+      border-radius: 5px;
+      border: none;
+      
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      
+    }
+    a{
+      text-decoration: none;
+    }
+    
+   
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="nav">
+      <ul>
+       <a href=""> <li>HOME</li></a>
+        <a href=""><li>ABOUT</li></a>
+       <a href=""> <li>CONTACT</li></a>
+       <a href=""> <li>FAQ</li></a>
+      </ul>
+     
+
+    </div>
+    <div id="quote">
+       <h1>Improve Your Sleep Efficiency for a Healthier Life</h1><br>
+      
+       <a href="#img1"> <button class="test">CLick Here</button></a>
+    </div>
+    <div id="img1">
+      
+      <form action="{{url_for('sec')}}" method="post">
+        <a href=""><button class="bt2" >Test your Sleep Efficiency</button></a>
+      </form>
+      
+
+
+    </div>
+  </div>
+    
+</body>
+</html>

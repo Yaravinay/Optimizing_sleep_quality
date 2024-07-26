@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENTER VALUES</title>
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <div>
+    <h3>ENTER VALUES TO PREDICT SLEEP EFFICIENCY</h3>
+    <form action="{{url_for('predict')}}" method="post">
+
+      <label for="id">ID</label>
+      <input type="number" name="a"><br>
+      <label for="Age">Age</label>
+      <input type="number" name="b"><br>
+      <label for="Gender">Gender</label>
+      <input type="number" name="c"><br>
+      <label for="">sleep duration</label>
+      <input type="number" name="d"><br>
+      <label for="">Rem sleep precentage</label>
+      <input type="number" name="e"><br>
+      <label for="">Deep sleep percentageep</label>
+      <input type="number" name="f"><br>
+      <label for="">Light sleep percentage</label>
+      <input type="number" name="g"><br>
+      <label for="">Awakenings</label>
+      <input type="number" name="h"><br>
+      <label for="">Caffeine consumption</label>
+      <input type="number" name="i"><br>
+      <label for="">Alcohol consumption</label>
+      <input type="number" name="j"><br>
+      <label for="">Smoking status</label>
+      <input type="number" name="k"><br>
+      <label for="">Exercise frequency</label>
+      <input type="number" name="l"><br>
+      <button type="submit">PREDICT</button>
+    </form>
+  </div>
+
+  <h3>SLEEP EFFICIENCY IS {{eff}}</h3>
+  
+</body>
+</html>
